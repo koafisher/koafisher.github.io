@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+p {
+ color: darkblue;
+}
+
+button {
+ color: darkgreen;
+}
+
+body {
+
+}
+
+</style>
+
+<body>
+
+<h1>Bon Jour!</h1>
+
+<p>What is the date?</p>
+
+<button type="button" onclick="myFunction()">I don't know tell me.</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction()
+{
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth();
+    year = date.getFullYear();
+    alert("Today is the " + day + " day of the " + month + " month " + "of the " + year + " year.");
+}
+</script>
+
+</body>
+</html>

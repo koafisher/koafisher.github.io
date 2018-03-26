@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Koa Fisher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<body>
+
+<div class="row">
+<div class="col-md-2 hidden-xs">
+
+<div id="leftside" class="sidebar">
+    <h2 id="h2.4" class="left"> Links</h2>
+    <a target="_top" href="https://www.linkedin.com/in/koa-fisher-0a5189107/" class="bar-item button">LinkedIn Profile</a>
+    <a target="_top" href="https://github.com/koafisher" class="bar-item button">Github</a>
+    <a target="_top" href="KoaFisher.pdf" class="bar-item button">Resume</a>
+    
+</div>
+</div>
+
+
+<div class="col-md-7 col-xs-12">
+
+    <div class="page-header">    
+        <h1 id="h1.1">Koa Fisher</h1>
+    </div>
+
+    <h2 id="h2.1">Who is Koa Fisher?</h2>
+        <p>
+            Ambitious scholar, musician, and athlete. pursuing a degree in applied mathematics with minors in music, physics, and computer science. Spending time practicing the viola, cello, and piano in spare time while also managing a balanced lifestyle with exercise swimming, running, and playing racquetball.
+        </p>
+   
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    
+    <div class="item active">
+      <img src="photos/Ben.jpg" alt="Ben">
+      <div class="carousel-caption">
+        <h3>Travel!</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="photos/Snake.jpg" alt="Snake">
+      <div class="carousel-caption">
+	<h3>New Experiences!</h3>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="photos/Volcano.jpg" alt="Gator">
+      <div class="carousel-caption">
+        <h3>Adventure!</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ 
+    <h2 id = "h2.2">Projects</h2>
+    <ul>
+        <li>
+            <a href="project3.html" class="bar-item button">Project 1</a>
+        </li>
+        <li>
+            <a href="project1.html" class="bar-item button">Project 2</a>
+        </li>
+        <li>
+            <a href="project2.html" class="bar-item button">Project 3</a>
+        </li>
+    </ul>
+    <!--button type="button" onclick="myFunction()">I don't know tell me.</button-->
+    
+    <h2 id="h2.3">Work Experience</h2>
+    <ul>
+        <h4>Current Employment:</h4>
+        <li>
+            Student Advisor - <a href="http://cpms.byu.edu/advisement-center/"> BYU, College of Physical and Mathematical Sciences</a>
+        </li>
+    </ul>
+    <ul>
+        <h4>Previous Employment:</h4>
+         <li>
+            Student Intern - <a href="http://www.sandia.gov/">Sandia National Labs</a>
+        </li>
+       <li>
+            Shift Supervisor - <a href="http://www.oremrecreation.com/scera-park-pools/">City of Orem Department of Recreation</a>
+        </li>
+        <li>
+            Lifeguard/Headguard - <a href="http://www.oremrecreation.com/scera-park-pools/">City of Orem Department of Recreation</a>
+        </li>
+	<br>
+    </ul>
+    
+    
+    <!--button type="button" onclick="colorFunction()">Surprise!</button-->
+    
+    <script>
+        function colorFunction()
+        {
+            document.getElementById("h2.1").style.background = "#fceaea";
+            document.getElementById("h2.2").style.background = "#fceaea";
+            document.getElementById("h2.3").style.background = "#fceaea";
+            document.getElementById("h2.4").style.background = "#fceaea";
+            document.getElementById("h1.1").style.background = "#f5acac";
+            document.getElementById("leftside").style.background = "#eb5a5a";
+            
+        }
+    </script>
+    
+<script>
+function myFunction()
+{
+    date = new Date();
+    day = date.getDate();
+    month = date.getMonth();
+    year = date.getFullYear();
+    alert("Today is the " + day + " day of the " + month + " month " + "of the " + year + " year.");
+        }
+</script>
+</div>
+
+<div class = "col-md-3 hidden-xs">
+<!--div id="rightside", style="width: 256px"-->
+<a href="https://www.facebook.com/koa.fisher.9">
+<img id="profile" src="profilepic.jpg" alt="Profile" align="right">
+</a>
+<a href="http://cpms.byu.edu/advisement-center/">
+<img id="work" src="http://cpms.byu.edu/wp-content/uploads/2010/02/koa1.jpg" alt="Work">
+</a>
+<!--/div-->
+</div>
+
+</div>
+
+</body>
+</html>
