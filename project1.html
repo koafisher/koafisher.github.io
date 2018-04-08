@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-p {
- color: blue;
- background-color: lightblue
-}
-
-body {
-
-}
-
-</style>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDhSCbvCt5NwWFQJaszVIchGm7afgg89Bw",
+            authDomain: "chatactivity-72c73.firebaseapp.com",
+            databaseURL: "https://chatactivity-72c73.firebaseio.com",
+            projectId: "chatactivity-72c73",
+            storageBucket: "chatactivity-72c73.appspot.com",
+            messagingSenderId: "367966440500"
+        };
+        firebase.initializeApp(config);
+    </script>
+    
+    <title>Sound Modifier</title>
+    <link rel="stylesheet" type="text/css" href="project1.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+    <!-- Your Javascript -->
+    <script src="javascripts/script.js"></script>
+    
 </head>
 <body>
 
-<p> Today we are doing this for a learning activity yay! </p>
+<div ng-controller="chatController">
+    <form novalidate class="simple-form">
+        Name: <input type="text" ng-model="user.name" /><br />
+        Chat: <input type="text" ng-model="user.chat" /><br />
+        <input type="submit" ng-click="update(user)" value="Save" />
+    </form>
+    <ul>
+        <li ng-repeat='line in chats'>
+            {{line.from}} - {{line.body}}
+        </li>
+    </ul>
+</div>
 
-<ul>   
-  <li>
-    tomato
-  </li>
-  <li>
-    banana
-  </li>
-</ul>
+
 </body>
 </html>
