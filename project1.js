@@ -1,14 +1,31 @@
-var myApp = angular.module("myApp",["firebase"]);
-myApp.controller("chatController", ["$scope", "$firebaseArray",
-                                    function($scope, $firebaseArray) {
-                                    var ref = firebase.database().ref().child("messages");
-                                    $scope.chats = $firebaseArray(ref);
-                                    $scope.update = function(user) {
-                                    var newmessage = {from:user.name || "anonymous",body:user.chat};
-                                    console.log(newmessage);
-                                    $scope.chats.$add(newmessage);
-                                    user.chat = "";
-                                    }
+var myApp = angular.module("app",[]);
+myApp.controller("mainController", ["$scope",
+                                    function($scope) {
+                                    
                                     }
                                     ]);
+
+
+var fruits = false;
+
+function toggle() {
+    var text;
+    
+    if (fruits === true) {
+        fruits = false
+        var toggle = document.getElementById("filename");
+        toggle.disabled = true;
+        toggle = document.getElementById("record");
+        toggle.disabled = false;
+    }
+    else if (fruits === false) {
+        fruits = true
+        var toggle = document.getElementById("filename");
+        toggle.disabled = false;
+        toggle = document.getElementById("record");
+        toggle.disabled = true;
+    }
+    //console.log(fruits)
+    //document.getElementById("demo").innerHTML = text;
+}
 
