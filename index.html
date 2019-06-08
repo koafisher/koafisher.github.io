@@ -147,19 +147,19 @@
         var Red = false;
         function colorChange()
         {
-            Red = !Red
+            Red = !Red;
             colorFunction(Red)
         }
         function colorFunction(Red)
         {
-            if (Red)
+            if (Red == 0)
             {
                 document.getElementById("h2.1").style.background = "#fceaea";
                 document.getElementById("h2.2").style.background = "#fceaea";
                 document.getElementById("h2.3").style.background = "#fceaea";
                 document.getElementById("h2.4").style.background = "#fceaea";
-                document.getElementById("h1.1").style.background = "#f5acac";
-                document.getElementById("leftside").style.background = "#eb5a5a";
+                document.getElementById("h1.1").style.background = "#fceaea";
+                document.getElementById("leftside").style.background = "#fceaea";
             }
             else {
                 document.getElementById("h2.1").style.background = "#d5f1fa";
