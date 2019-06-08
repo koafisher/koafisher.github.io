@@ -141,18 +141,34 @@
     </ul>
     
     
-    <button type="button" onclick="colorFunction()">Surprise!</button>
+    <button type="button" onclick="colorChange()">Surprise!</button>
     
     <script>
-        function colorFunction()
+        var Red = false
+        function colorChange(Red)
         {
-            document.getElementById("h2.1").style.background = "#fceaea";
-            document.getElementById("h2.2").style.background = "#fceaea";
-            document.getElementById("h2.3").style.background = "#fceaea";
-            document.getElementById("h2.4").style.background = "#fceaea";
-            document.getElementById("h1.1").style.background = "#f5acac";
-            document.getElementById("leftside").style.background = "#eb5a5a";
-            
+            Red = !Red
+            colorFunction(Red)
+        }
+        function colorFunction(Red)
+        {
+            if Red
+            {
+                document.getElementById("h2.1").style.background = "#fceaea";
+                document.getElementById("h2.2").style.background = "#fceaea";
+                document.getElementById("h2.3").style.background = "#fceaea";
+                document.getElementById("h2.4").style.background = "#fceaea";
+                document.getElementById("h1.1").style.background = "#f5acac";
+                document.getElementById("leftside").style.background = "#eb5a5a";
+            }
+            else {
+                document.getElementById("h2.1").style.background = "#d5f1fa";
+                document.getElementById("h2.2").style.background = "#d5f1fa";
+                document.getElementById("h2.3").style.background = "#d5f1fa";
+                document.getElementById("h2.4").style.background = "#d5f1fa";
+                document.getElementById("h1.1").style.background = "#d5f1fa";
+                document.getElementById("leftside").style.background = "#d5f1fa";
+            }
         }
     </script>
     
