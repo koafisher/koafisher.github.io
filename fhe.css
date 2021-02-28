@@ -1,0 +1,91 @@
+p {
+    font-family:verdana, courier;
+    padding: 16px;
+}
+
+button {
+    
+}
+
+#main {
+    display: block;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+#profile {
+    width:238px;
+    height:357px;
+    position:fixed;
+    right:8px;
+    top:8px;
+    float: right;
+    border-radius: 10px;
+}
+
+#work {
+    width:238px;
+    height:357px;
+    position:fixed;
+    right:8px;
+    top:380px;
+    float: right;
+    border-radius: 10px;
+}
+
+body {
+    
+}
+
+.bar-block .bar-item {
+    width: 100%;
+    display: block;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    text-align: left;
+}
+
+h1 {
+    display:block;
+    padding-left:8px;
+    padding-top:8px;
+    padding-bottom:8px;
+    padding-right:8px;
+    background:#d5f1fa;
+    border-radius:10px;
+}
+
+h2 {
+    display: block;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    background:#d5f1fa;
+    border-radius:10px;
+}
+
+.bar-item.button {
+    display: block;
+    vertical-align: middle;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+}
+
+.sidebar {
+    height: 100%;
+    background: #d5f1fa;
+    position: fixed!important;
+    padding: 8px;
+    margin: 8px;
+    overflow-x: auto;
+    overflow-y: auto;
+    border-radius: 10px;
+}
+
