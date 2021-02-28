@@ -11,23 +11,7 @@ p {
     padding-left: 16px;
 }
 
-#profile {
-    width:238px;
-    height:357px;
-    position:fixed;
-    right:8px;
-    top:8px;
-    float: right;
-    border-radius: 10px;
-}
-
-#work {
-    width:238px;
-    height:357px;
-    position:fixed;
-    right:8px;
-    top:380px;
-    float: right;
+#temple {
     border-radius: 10px;
 }
 
