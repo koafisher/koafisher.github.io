@@ -13,7 +13,6 @@ p {
 
 #temple {
     border-radius: 10px;
-    padding-left:8px;
 }
 
 body {
@@ -28,10 +27,6 @@ h1 {
     padding-right:16px;
     background:#d5f1fa;
     border-radius:10px;
-}
-
-#fb {
-    padding-left:8px;
 }
 
 h2 {
