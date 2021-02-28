@@ -19,6 +19,10 @@ p {
     margin-left: 40px;
 }
 
+#content {
+    margin-left: 8px;
+}
+
 body {
     font-family: "Courier New", Courier, monospace;
 }
