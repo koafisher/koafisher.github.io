@@ -15,6 +15,10 @@ p {
     border-radius: 10px;
 }
 
+#activity {
+    margin-left: 40px;
+}
+
 body {
     font-family: "Courier New", Courier, monospace;
 }
